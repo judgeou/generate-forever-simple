@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Generate Forever Simple
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  create a generate forever button
 // @author       judgeou
 // @copyright    2024+, judgeou (https://github.com/judgeou)
@@ -23,6 +23,7 @@
     btn.addEventListener('click', () => {
         if (status == 'OFF') {
             status = 'ON'
+            loop()
         } else if (status == 'ON') {
             status = 'OFF'
         }
@@ -38,8 +39,8 @@
             if (!span.parentElement.disabled) {
                 span.click()
             }
+            setTimeout(loop, 1000)
         }
-        setTimeout(loop, 1000)
     }
 
     loop()
