@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Generate Forever Simple
 // @namespace    http://tampermonkey.net/
-// @version      356c53d
+// @version      1.0
 // @description  create a generate forever button
 // @author       judgeou
 // @copyright    2024+, judgeou (https://github.com/judgeou)
